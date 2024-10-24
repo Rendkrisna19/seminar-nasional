@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devforge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="bg-white scroll-smooth">
+   <!--Navbar-->
+   <nav class="bg-white shadow-md fixed w-full z-10 top-0" ></nav>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex">
+          <!-- Logo & Brand -->
+          <div class="flex-shrink-0 flex items-center">
+           
+            <h1 class="ml-3 text-xl font-semibold">Dev <span class="text-cyan-400">Forge</span></h1>
+          </div>
+        </div>
+        
+        <!-- Hamburger Menu -->
+        <div class="-mr-2 flex items-center sm:hidden">
+          <button id="hamburger" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <span class="sr-only">Open main menu</span>
+            <!-- Hamburger Icon -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!-- Close Icon -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden sm:flex sm:items-center sm:ml-6">
+          <div class="flex space-x-4">
+            <a href="#" class="nav-item text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-400">Home</a>
+            <a href="#mentor" class="nav-item text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-400">Mentor</a>
+            <a href="#about" class="nav-item text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-400">About</a>
+            <a href="#botcamp" class="nav-item text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-400">Botcamp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="sm:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#" class="nav-item text-black block px-3 py-2 rounded-md text-base font-medium hover:bg-cyan-400">Home</a>
+        <a href="#mentor" class="nav-item text-black block px-3 py-2 rounded-md text-base font-medium hover:bg-cyan-400">Mentor</a>
+        <a href="#about" class="nav-item text-black block px-3 py-2 rounded-md text-base font-medium hover:bg-cyan-400">About</a>
+        <a href="#botcamp" class="nav-item text-black block px-3 py-2 rounded-md text-base font-medium hover:bg-cyan-400">Botcamp</a>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- Hero Section -->
+    <section class="flex flex-col md:flex-row items-center justify-between p-10 md:p-20" id="home">
+      <div class="space-y-4 max-w-xl">
+        <h1 class="text-4xl md:text-6xl font-bold" >
+          <span class="text-cyan-400">SEMINAR</span> NASIONAL <br />
+          with <span class="text-black">DEVFORGE</span>
+        </h1>
+        <p class="text-gray-600">
+          Seminar Nasional Menguasai Teknologi Framework Modern Sebagai Kunci
+          Pengembangan Web. Seminar ini bertujuan untuk memperkenalkan teknologi
+          framework pemrograman modern yang mendominasi dunia pengembangan web
+          saat ini. Peserta akan mendapatkan wawasan tentang bagaimana framework
+          seperti React.js, Vue.js, Angular, dan Node.js telah merevolusi cara
+          website dan aplikasi web dibangun. 
+        </p>
+        <div class="flex space-x-4" data-aos="fade-up">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScrXJIBxmzh0o2NvXGG06SazUzIJxm83XPD1pkpSccx7ntl_Q/viewform?usp=sharing"
+            class="bg-cyan-400 text-black py-3 px-6 rounded-md hover:bg-cyan-700"
+            >Daftar Sekarang!</a
+          >
+          <a
+            href="#about"
+            class="border border-cyan-400 text-black py-3 px-6 rounded-md flex items-center space-x-2 hover:bg-cyan-700 hover:text-white"
+          >
+            <span>Tentang Kami</span>
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.868v4.264a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 12a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 md:mt-0 p-2">
+  <img data-aos="fade-up"
+    src="./seminar-nasional.png"
+    alt="Woman with Books"
+    class="w-80 h-130 rounded-lg shadow-[0_0_0_10px_#42e4ec]"
+  />
+</div>
+    </section>
+
+    <!--Patner Menu-->
+    <section class="flex  space-x-8 md:space-x-2 py-10  
+    grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center ">
+        <!-- Logo 1 -->
+        <img data-aos="fade-right" src="/logo permikomnas.png" alt="Airbnb" class="h-36 grayscale-hover transition duration-300 ease-in-out filter grayscale">
+        
+       
+        <img data-aos="fade-left" src="/logo mi.png" alt="Google" class="h-36 grayscale-hover transition duration-300 ease-in-out filter grayscale"> 
+        
+        <!-- Logo 3 -->
+        <!-- <img src="/image-removebg-preview (1).png" alt="Microsoft" class="h-16 grayscale-hover transition duration-300 ease-in-out"> -->
+        
+        <!-- Logo 4 -->
+        <!-- <img src="/image-removebg-preview (1).png" alt="Spotify" class="h-16 grayscale-hover transition duration-300 ease-in-out"> -->
+        
+        <!-- Logo 5 -->
+        <!-- <img src="/image-removebg-preview (1).png" alt="Mailchimp" class="h-16 grayscale-hover transition duration-300 ease-in-out">
+         -->
+        <!-- Logo 6 -->
+        <!-- <img src="/image-removebg-preview (1).png" alt="Mashable" class="h-16 grayscale-hover transition duration-300 ease-in-out"> -->
+      </section>
+
+
+      <!--Mentor-->
+      <!-- component -->
+<section class="bg-white dark:bg-gray-900" id="mentor">
+    <div class="container px-6 py-10 mx-auto">
+        <div class="xl:flex xl:items-center xL:-mx-4">
+            <div class="xl:w-1/2 xl:mx-4">
+                <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Pemateri</h1>
+                
+                <p class="max-w-2xl mt-4 text-gray-500 dark:text-gray-300">
+                  professional programmer with ahigh commitment. With 10 years ofexperience I have worked on projectsindividually and in teams.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2">
+              <div>
+                  <img data-aos="fade-down-right" class="object-cover rounded-xl w-full h-auto md:h-64" src="/img/pemateri.JPG" alt="Fadlan Chairi">
+                  
+                  <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Fadlan Chairi</h1>
+                  
+                  <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">Senior Programmer</p>
+              </div>
+          
+              <div>
+                  <img data-aos="fade-down-left" class="object-cover rounded-xl w-full h-auto md:h-64" src="/img/pemateri2.JPG" alt="">
+              </div>
+          </div>
+          
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+      <!--Team Menu-->
+      <section class="bg-white dark:bg-gray-900" id="about">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">Tentang Kami</h1>
+            <div  class="grid grid-cols-2 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+
+                <!--start-->
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left"  class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/Rendy.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Muhammad Rendy Krisna(MI3-D)</h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102004</p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Ketua Panitia</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/renndydev?igsh=MXF6bmw5OWloYWF6aQ==" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/hepiana.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Hepyana Hefty Dohar Zaimah Daulay(MI3-D)
+                        <h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102124
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">Bendahara</p>
+                    
+                    <div class="flex mt-3 -mx-2 items-center justify-center">
+                        <a href="https://www.instagram.com/h_pty.?igsh=MWhuY3dtMDNzNWxuZA==" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/IMG_0615.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">HATTA FAHRIZA
+                        (MI3-E)</h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102105
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">Sekretaris</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/hattafhrii?igsh=MWxoOGdkbTV1dDJ2Mw%3D%3D&utm_source=qr
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/Randy.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Muhammad Randy Karna(MI3-E)
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102005</p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Koor Divisi Acara</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href=" www.intagram.com/rann_karna10" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/JESICA NAFTALI.PNG" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">JESICA NAFTALI AURELIA SRG(MI3-E)
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102100</p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Anggota Divisi Acara</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href=" https://www.instagram.com/im.njess?igsh=ZXR3ZXRxdmwxNWt1&utm_source=qr 
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/Alifa Qadri.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Alifa Qadri(MI3-B) 
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-black group-hover:text-gray-300">2305102132</p>
+                    <p class="mt-2 text-black capitalize dark: text-black group-hover:text-gray-300 text-center">Anggota Divisi Acara</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/alifaqadri?igsh=MXQ2MzBvaDdqbHV5OA==
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/Teresia Suasana Tarigan.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Teresia Suasana Tarigan(MI3-E)
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102060</p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Divisi Anggota Acara</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/teresiatarigan04?igsh=Nm02cTExOXdxNWk5
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/Alif Maulana.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Alif Maulana Hasyim(MI5-C)
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300"> 2205102037
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Koor Divisi PDD</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href=" https://www.instagram.com/alepmaulana_/
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/mia.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Mauliza Azizah Rachman Namira Lubis SH(MI3-D)
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102054
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Anggota Divisi PDD</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/rachnmra
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/Rachel Sagita Sibarani .jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Rachel Sagita Sibarani(MI3-B) 
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102072
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Anggota Divisi PDD</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/rachel_sagita3?igsh=MTZzNnd0eDg3MjZsZg==
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/abyan.jpeg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">ABYAN DZAKKY(MI5-D)
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2205102067
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Anggota Divisi PDD</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href=" https://www.instagram.com/_abyan77/
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/beny.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">BENNY ARYAN ALFYAN TAMBA(MI5-D)
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2205102083
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Anggota divisi PDD</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/bennytamba_
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/Galang Putra Muhammad.JPG" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">GALANG PUTRA MUHAMMAD(MI3-B)
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102012
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Koor Divisi Humas</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/gaalangptraa
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/NajwaSitiAulia.JPG" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">NAJWA SITI AULIA(MI3-D)</h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102014
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Anggota Divisi Acara</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/anesera_lavanya?igsh=MTZjZ2NvZWJ2d2UyOQ==
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/Tesa Pebriani Sianturi.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Tesa Pebriani Sianturi(MI3-E)
+                    </h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102040</p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Anggota Divisi Humas</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href=" https://www.instagram.com/tecapebrian_?igsh=MTN1cGhmbXM4N3RnZQ==
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/AMALIA SYAHRANI.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Amalia Syahrani
+                      (MI5-B)</h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2205102069
+
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Anggota Divisi Humas</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/_amaliasyahrani?igsh=aW11bWkyZWdpZ2dy"
+
+ class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/MUHAMMAD KHAIRUL SAGALA.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Muhammad Khairul Sagala (MI3-C)</h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102018
+
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Anggota Divisi Acara</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/khaaaa_23?igsh=MTYxZG80bWd2dnY2bg=="
+
+ class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-cyan-400 rounded-xl">
+                    <img data-aos="flip-left" class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/img/mariska.jpg" alt="">
+                    
+                    <h1 class=" text-center mt-4 text-1xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Mariska Siagian(MI3-B)</h1>
+                    
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">2305102042
+                    </p>
+                    <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300 text-center">Anggota Divisi Humas</p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="https://www.instagram.com/mariskasiagian?igsh=MTdhdGtjOTJzeWx0cQ==
+" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.162c3.208 0 3.6.012 4.866.07 1.46.06 2.784.63 3.768 1.616a5.016 5.016 0 011.615 3.768c.057 1.267.069 1.658.069 4.866s-.012 3.6-.069 4.866a5.016 5.016 0 01-1.615 3.768c-.984.986-2.308 1.556-3.768 1.616-1.266.058-1.658.07-4.866.07s-3.6-.012-4.866-.07c-1.46-.06-2.784-.63-3.768-1.616A5.016 5.016 0 012.162 16.57c-.057-1.267-.069-1.658-.069-4.866s.012-3.6.069-4.866A5.016 5.016 0 013.93 4.748c.984-.986 2.308-1.556 3.768-1.616C8.4 2.174 8.792 2.162 12 2.162zm0-2.162C8.745 0 8.354.012 7.05.069 5.335.134 3.787.668 2.603 1.853 1.419 3.037.885 4.585.819 6.3.762 7.608.75 8.018.75 12s.012 4.392.069 5.7c.066 1.715.6 2.747 1.784 3.932C3.787 22.667 5.335 23.2 7.05 23.269c1.304.057 1.695.069 4.95.069s3.645-.012 4.95-.069c1.715-.069 3.263-.603 4.447-1.787 1.184-1.184 1.718-2.217 1.784-3.932.057-1.308.069-2.08.069-5.7s-.012-4.392-.069-5.7c-.066-1.715-.6-2.747-1.784-3.932C19.263.668 17.715.134 16.002.069 14.698.012 14.307 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.49a4.328 4.328 0 110-8.656 4.328 4.328 0 010 8.656zm4.539-10.49a1.035 1.035 0 100-2.069 1.035 1.035 0 000 2.069z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+               
+
+                
+
+
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--botcamp menu -->
+    <div class="relative isolate overflow-hidden bg-gray-900" id="botcamp">
+        <svg
+          class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+          aria-hidden="true">
+          <defs>
+            <pattern id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc" width="200" height="200" x="100%" y="-1"
+              patternUnits="userSpaceOnUse">
+              <path d="M.5 200V.5H200" fill="none"></path>
+            </pattern>
+          </defs>
+          <svg x="50%" y="-1" class="overflow-visible fill-gray-800/20">
+            <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+              stroke-width="0"></path>
+          </svg>
+          <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)"></rect>
+        </svg>
+        <div
+          class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
+          aria-hidden="true">
+          <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
+            style="clip-path:polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)">
+          </div>
+        </div>
+        <div class="mt-[-50px] flex h-screen items-center justify-center">
+          <div class="max-w-full flex-shrink-0 px-4 text-center lg:mx-0 lg:max-w-3xl lg:pt-8">
+            <h1 data-aos="fade-down" class="mt-10 text-5xl font-bold tracking-tight text-white sm:text-6xl">
+              COOMING SOON
+              <span data-aos="fade-down" class="text-cyan-400">BOTCAMP</span> with
+              <span data-aos="fade-down" class="text-cyan-400">Devforge</span>
+            </h1>
+            <p   data-aos="fade-up-right" class="mt-6 text-lg leading-8 text-gray-300">Tetap stay di website portal devforge nantikan acara botcamp yang menarik dan seru
+              </p>
+            <!-- <div class="mt-5 flex items-center justify-center gap-x-6">
+              <a href=""
+                class="rounded-md bg-cyan-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+                rel="noreferrer">Try Now →</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+
+
+    <!--footer Menu-->
+    <footer class="flex flex-col space-y-10 justify-center m-10">
+
+        <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+            <a class="hover:text-gray-900" href="#">Home</a>
+            <a class="hover:text-gray-900" href="#">Mentor</a>
+            <a class="hover:text-gray-900" href="#">About</a>
+            <a class="hover:text-gray-900" href="#">Botcamp</a>
+        </nav>
+        <p class="text-center text-gray-700 font-medium">&copy; 2024 Muhammad Rendy Krisna. Hak cipta.</p>
+    </footer>
+
+
+    <div class="fixed bottom-6 lift-6 md:bottom-8 md:right-8">
+        <button onclick="scrollToTop()" class="bg-cyan-400 text-white p-4 rounded-full shadow-lg hover:bg-cyan-400 focus:outline-none focus:ring-4 focus:ring-blue-300">
+          <!-- Ikon panah ke atas -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+      </div>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
